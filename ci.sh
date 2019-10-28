@@ -10,7 +10,7 @@ echo "Output file: ci-$START-$END.csv"
 touch ci-$START-$END.csv
 BASE_URL=$URL
 
-i=1
+i=$START
 while [ $i -lt $END ]
 do
   echo $i
