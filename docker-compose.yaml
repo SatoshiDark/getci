@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  ci:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=1
+      - END=10
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
