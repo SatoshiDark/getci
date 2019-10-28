@@ -1,11 +1,74 @@
 version: '3.3'
 services:
-  ci:
+  ci2:
     volumes:
       - ./results:/results
     environment:
-      - START=1
-      - END=10
+      - START=2000001
+      - END=3000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci3:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=3000001
+      - END=4000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci4:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=4000001
+      - END=5000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci5:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=5000001
+      - END=6000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci6:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=6000001
+      - END=7000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci7:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=7000001
+      - END=8000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci8:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=8000001
+      - END=9000000
+      - URL=https://computo.oep.org.bo/resul/mesaElector/
+    image: test/ci
+    build: .
+  ci9:
+    volumes:
+      - ./results:/results
+    environment:
+      - START=9000001
+      - END=10000000
       - URL=https://computo.oep.org.bo/resul/mesaElector/
     image: test/ci
     build: .
